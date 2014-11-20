@@ -9,10 +9,8 @@
       <%--  Any extra header links go here--%>
 </asp:Content>
 <asp:Content ID="DefaultContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <div class="container">
-            <div class="jumbotron">
-                <h1>The best simple boffer weapons over 6,900 feet</h1>
-            </div>
-       </div>   
+    <div class="jumbotron">
+        <h1>The best simple boffer weapons over 6,900 feet</h1>
+    </div>   
 </asp:Content>
 
