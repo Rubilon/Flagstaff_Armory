@@ -2,7 +2,6 @@
 
 public partial class Products : System.Web.UI.Page
 {
-    public double price;
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
@@ -18,13 +17,15 @@ public partial class Products : System.Web.UI.Page
         {
             case "Weapon":
                 ddlEquipMaterial.Visible = true;
-                if (ddlAWType.Visible == true)
+                if(ddlAWType.Visible == true)
                     ddlAWType.Visible = false;
+                lblPrice.Text = "$0.00";
                 break;
             case "Armor":
                 ddlEquipMaterial.Visible = true;
                 if (ddlAWType.Visible == true)
                     ddlAWType.Visible = false;
+                lblPrice.Text = "$0.00";
                 break;
             default:
                 ddlEquipMaterial.Visible = false;
@@ -34,9 +35,9 @@ public partial class Products : System.Web.UI.Page
                     ddlAWType.SelectedIndex = 0;
                 }
                 ddlEquipMaterial.SelectedIndex = 0;
+                lblPrice.Text = "$0.00";
                 break;
         }
-        spPrice.Visible = false;
     }
     protected void ddlEquipMaterial_SelectedIndexChanged(object sender, EventArgs e)
     {
@@ -56,39 +57,9 @@ public partial class Products : System.Web.UI.Page
                 ddlAWType.SelectedIndex = 0;
                 break;
         }
-        spPrice.Visible = false;
     }
     protected void ddlAWType_SelectedIndexChanged(object sender, EventArgs e)
     {
-        switch (ddlAWType.SelectedValue)
-        {
-            case "Dagger":
-                price = 10;
-                break;
-            case "One-Handed":
-                price = 15;
-                break;
-            case "Two-Handed":
-                price = 50;
-                break;
-            case "Shield":
-                price = 30;
-                break;
-            case "Armor":
-                if (ddlEquipMaterial.SelectedValue == "Foam")
-                {
-                    price = 50;
-                }
-                else if (ddlEquipMaterial.SelectedValue == "PVC")
-                {
-                    price = 80;
-                }
-                break;
-            default:
-                spPrice.Visible = false;
-                break;
-        }
-        spPrice.Text = String.Format("{0:C}", price);
-        spPrice.Visible = true;
+
     }
 }
