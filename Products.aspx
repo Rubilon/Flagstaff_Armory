@@ -22,6 +22,10 @@
             height: 250px;
             width: 250px;
         }
+         .imgbutton {
+            height: 250px;
+            width: 250px;
+        }
         .btnBack {
             position: absolute;
         }
@@ -31,13 +35,13 @@
 <asp:Content ID="ProductsContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div>
             <div class="jumbotron">
-                <h1>Customize your arms or armor!</h1>
+                <h1>Select your arms or armor!</h1>
             </div>
             <asp:Button ID="btnBack" CssClass="btn-info btnBack" runat="server" Text="back" visible="false" OnClick="btnBack_Click"/>
             <asp:Table ID="tblEQSelection" runat="server">
                 <asp:TableRow Cssclass="images">
-                    <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center"><img src="Images/Weapons.jpg" /></asp:TableCell>
-                    <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center"><img src="Images/ArmorShield.jpg" /></asp:TableCell>
+                    <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center"><asp:ImageButton runat="server" CssClass="imgbutton img-rounded" OnClick="btnWeapon_Click" ImageUrl="Images/Weapons.jpg" /></asp:TableCell>
+                    <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center"><asp:ImageButton runat="server" CssClass="imgbutton img-rounded" OnClick="btnArmor_Click" ImageUrl="Images/ArmorShield.jpg" /></asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow Cssclass="buttons">
                     <asp:TableCell HorizontalAlign="Center">
@@ -51,12 +55,12 @@
 
             <asp:Table ID="tblMaterialSelection" runat="server" Visible="false">
                 <asp:TableRow ID="trWMaterials" Cssclass="images" Visible="false">
-                    <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center"><img src="Images/WPvC.jpg" /></asp:TableCell>
-                    <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center"><img src="Images/WFiber.jpg" /></asp:TableCell>
+                    <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center"><asp:ImageButton runat="server" CssClass="imgbutton img-rounded" OnClick="btnWPvC_Click" ImageUrl="Images/WPvC.jpg" /></asp:TableCell>
+                    <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center"><asp:ImageButton runat="server" CssClass="imgbutton img-rounded" OnClick="btnWFiberglass_Click" ImageUrl="Images/WFiber.jpg" /></asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow ID="trAMaterials" Cssclass="images" Visible="false">
-                    <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center"><img src="Images/AFoam.jpg" /></asp:TableCell>
-                    <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center"><img src="Images/APvC.jpg" /></asp:TableCell>
+                    <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center"><asp:ImageButton runat="server" CssClass="imgbutton img-rounded" OnClick="btnAFoam_Click" ImageUrl="Images/AFoam.jpg" /></asp:TableCell>
+                    <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center"><asp:ImageButton runat="server" CssClass="imgbutton img-rounded" OnClick="btnAPvC_Click" ImageUrl="Images/APvC.jpg" /></asp:TableCell>
                 </asp:TableRow>
                  <asp:TableRow ID="trWMatSelection" Cssclass="buttons" Visible="false">
                     <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center">
