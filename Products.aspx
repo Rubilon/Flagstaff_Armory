@@ -45,10 +45,10 @@
                 </asp:TableRow>
                 <asp:TableRow Cssclass="buttons">
                     <asp:TableCell HorizontalAlign="Center">
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnWeapon" runat="server" Text="Arms" OnClick="btnWeapon_Click" />
+                        <asp:Label runat="server">Arms</asp:Label>
                     </asp:TableCell>
                     <asp:TableCell HorizontalAlign="Center">
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnArmor" runat="server" Text="Armor" OnClick="btnArmor_Click" />            
+                        <asp:Label ID="Label1" runat="server">Armor</asp:Label>        
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
@@ -64,18 +64,18 @@
                 </asp:TableRow>
                  <asp:TableRow ID="trWMatSelection" Cssclass="buttons" Visible="false">
                     <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center">
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnWPvC" runat="server" Text="PvC" OnClick="btnWPvC_Click" />
+                        <asp:Label ID="Label2" runat="server">PVC</asp:Label>
                     </asp:TableCell>
                     <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center">
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnWFiberglass" runat="server" Text="Fiberglass" OnClick="btnWFiberglass_Click" />
+                        <asp:Label ID="Label3" runat="server">Fiberglass</asp:Label>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow ID="trAMatSelection" Cssclass="buttons" Visible="false">
                     <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center">
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnAFoam" runat="server" Text="Foam" OnClick="btnAFoam_Click" />
+                        <asp:Label ID="Label4" runat="server">Foam</asp:Label>
                     </asp:TableCell>
                     <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center">
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnAPvC" runat="server" Text="PvC" OnClick="btnAPvC_Click" />
+                        <asp:Label ID="Label5" runat="server">PVC</asp:Label>
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
@@ -90,15 +90,15 @@
                 </asp:TableRow>
                 <asp:TableRow ID="trAPvCArmorChoice" Cssclass="buttons" Visible="false">
                     <asp:TableCell>
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnAPvCArmor" runat="server" Text="Armor" OnClick="btnAPvCArmor_Click" />
+                        <asp:Label ID="Label6" runat="server">PVC Armor</asp:Label>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow ID="trAFoamArmorChoice" Cssclass="buttons" Visible="false">
                     <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center">
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnAFoamArmor" runat="server" Text="Armor" OnClick="btnAFoamArmor_Click" />
+                        <asp:Label ID="Label7" runat="server">Armor</asp:Label>
                     </asp:TableCell>
                     <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center">
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnAFoamShield" runat="server" Text="Shield" OnClick="btnAFoamShield_Click" />
+                        <asp:Label ID="Label8" runat="server">Shield</asp:Label>
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
@@ -109,7 +109,7 @@
                 </asp:TableRow>
                 <asp:TableRow ID="trPvCArmorSelection" Cssclass="buttons">
                     <asp:TableCell HorizontalAlign="Center">
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnPvCArmor" runat="server" Text="Armor" OnClick="btnPvCArmor_Click" />
+                        <asp:Label ID="Label9" runat="server">PVC Armor</asp:Label>
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
@@ -124,28 +124,25 @@
                 </asp:TableRow>
                 <asp:TableRow ID="trWFGSelection" Cssclass="buttons" Visible="false">
                     <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center">
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnFG2H" runat="server" Text="2-Handed" OnClick="btnFG2H_Click" />
+                        <asp:Label ID="Label10" runat="server">2-Handed</asp:Label>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow ID="trWPvCSelection" Cssclass="buttons" Visible="false">
                     <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center">
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnPvCDag" runat="server" Text="Dagger" OnClick="btnPvCDag_Click" />
+                        <asp:Label ID="Label11" runat="server">Dagger</asp:Label>
                     </asp:TableCell>
                     <asp:TableCell CssClass="tcChoice" HorizontalAlign="Center">
-                        <asp:Button CssClass="btn btn-toolbar" ID="btnPvC1H" runat="server" Text="1-Handed" OnClick="btnPvC1H_Click" />
+                        <asp:Label ID="Label12" runat="server">1-Handed</asp:Label>
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
-       </div>  
-
-        <asp:SqlDataSource ID="SqlDSMaterial" runat="server" ConnectionString="<%$ ConnectionStrings:Material_Information %>" ProviderName="<%$ ConnectionStrings:Material_Information.ProviderName %>" SelectCommand="SELECT [M_Name], [Price] FROM [Equip_Materials] WHERE ([AW_Type] = ?)">
-            <SelectParameters>
-            </SelectParameters>
-        </asp:SqlDataSource>
-        
-        <asp:SqlDataSource ID="SqlDSEquip" runat="server" ConnectionString="<%$ ConnectionStrings:Material_Information %>" ProviderName="<%$ ConnectionStrings:Material_Information.ProviderName %>" SelectCommand="SELECT [Multiplier], [AWName] FROM [AWType] WHERE (([Type] = ?) AND ([Material] = ?))">
-            <SelectParameters>
-            </SelectParameters>
-        </asp:SqlDataSource> 
+       </div> 
+       <asp:TableRow runat="server" Visible="False">
+           <asp:TableCell runat="server">
+                <asp:Label runat="server" ID="Type"></asp:Label>
+                <asp:Label runat="server" ID="Material"></asp:Label>
+                <asp:Label runat="server" ID="Selection"></asp:Label>
+           </asp:TableCell>
+       </asp:TableRow> 
 </asp:Content>
 
