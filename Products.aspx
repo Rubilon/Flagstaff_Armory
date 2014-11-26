@@ -137,12 +137,12 @@
                 </asp:TableRow>
             </asp:Table>
        </div> 
-       <asp:TableRow runat="server" Visible="False">
-           <asp:TableCell runat="server">
-                <asp:Label runat="server" ID="Type"></asp:Label>
-                <asp:Label runat="server" ID="Material"></asp:Label>
-                <asp:Label runat="server" ID="Selection"></asp:Label>
-           </asp:TableCell>
-       </asp:TableRow> 
+       <Table runat="server" style="visibility: hidden">
+           <tr>
+                <td ID="lblType"></td>
+                <td ID="lblMaterial"></td>
+                <td ID="lblSelection"></td>
+           </tr>
+       </Table> 
 </asp:Content>
 

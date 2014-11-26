@@ -17,6 +17,7 @@ public partial class Products : System.Web.UI.Page
         trAMaterials.Visible = true;
         trAMatSelection.Visible = true;
         btnBack.Visible = true;
+        lblType.InnerText = "Armor";
     }
     protected void btnWeapon_Click(object sender, EventArgs e)
     {
@@ -25,6 +26,7 @@ public partial class Products : System.Web.UI.Page
         trWMaterials.Visible = true;
         trWMatSelection.Visible = true;
         btnBack.Visible = true;
+        lblType.InnerText = "Weapon";
     }
     protected void btnAFoam_Click(object sender, EventArgs e)
     {
@@ -32,11 +34,13 @@ public partial class Products : System.Web.UI.Page
         tblFoamArmorSelection.Visible = true;
         trAFoamArmor.Visible = true;
         trAFoamArmorChoice.Visible = true;
+        lblMaterial.InnerText = "Foam";
     }
     protected void btnAPvC_Click(object sender, EventArgs e)
     {
         tblMaterialSelection.Visible = false;
         tblPvCArmorSelection.Visible = true;
+        lblMaterial.InnerText = "PvC";
     }
     protected void btnWPvC_Click(object sender, EventArgs e)
     {
@@ -44,6 +48,7 @@ public partial class Products : System.Web.UI.Page
         tblWeapons.Visible = true;
         trPvCWeapons.Visible = true;
         trWPvCSelection.Visible = true;
+        lblMaterial.InnerText = "PvC";
     }
     protected void btnWFiberglass_Click(object sender, EventArgs e)
     {
@@ -51,6 +56,7 @@ public partial class Products : System.Web.UI.Page
         tblWeapons.Visible = true;
         trFGWeapons.Visible = true;
         trWFGSelection.Visible = true;
+        lblMaterial.InnerText = "Fiberglass";
     }
     protected void btnAFoamArmor_Click(object sender, EventArgs e)
     {
@@ -86,11 +92,13 @@ public partial class Products : System.Web.UI.Page
         {
             tblPvCArmorSelection.Visible = false;
             tblMaterialSelection.Visible = true;
+            lblMaterial.InnerText = "";
         }
         else if (tblFoamArmorSelection.Visible)
         {
             tblFoamArmorSelection.Visible = false;
             tblMaterialSelection.Visible = true;
+            lblMaterial.InnerText = "";
         }
         else if (tblWeapons.Visible)
         {
@@ -100,6 +108,7 @@ public partial class Products : System.Web.UI.Page
                 trWFGSelection.Visible = false;
                 tblWeapons.Visible = false;
                 tblMaterialSelection.Visible = true;
+                lblMaterial.InnerText = "";
             }
             else if (trPvCWeapons.Visible)
             {
@@ -107,6 +116,7 @@ public partial class Products : System.Web.UI.Page
                 trWPvCSelection.Visible = false;
                 tblWeapons.Visible = false;
                 tblMaterialSelection.Visible = true;
+                lblMaterial.InnerText = "";
             }
         }
         else if (tblMaterialSelection.Visible)
@@ -118,6 +128,7 @@ public partial class Products : System.Web.UI.Page
             trWMatSelection.Visible = false;
             tblEQSelection.Visible = true;
             btnBack.Visible = false;
+            lblType.InnerText = "";   
         }
     }
 }
