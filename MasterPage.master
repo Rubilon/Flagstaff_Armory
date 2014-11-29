@@ -21,9 +21,9 @@
 </head>
  
 <body style="height: 100%" class="theme">
-    
+   
     <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -42,15 +42,14 @@
                     <li><a href="Products.aspx" target="">Products</a></li>
                     <li><a href="ContactUs.aspx" target="">Contact Us</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right" style="margin-right: 12.5%;" >
-                         <li><a href="ShoppingCart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="ShoppingCart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
                 </ul>
-                
-     
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    <div class="container" style="background-color: white; height:  100%" >
+       
+    <div class="container" style="background-color: white;">
     <form id="form1" runat="server" style=" margin-top: 60px;" >
             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
             
@@ -62,7 +61,6 @@
                 </footer>
             </div>
     </form>
-        
         </div>
     <script>
         var url = window.location;

@@ -60,31 +60,31 @@ public partial class Products : System.Web.UI.Page
     }
     protected void btnAFoamArmor_Click(object sender, EventArgs e)
     {
-
+        
     }
     protected void btnAFoamShield_Click(object sender, EventArgs e)
     {
-
+        
     }
     protected void btnAPvCArmor_Click(object sender, EventArgs e)
     {
-
+      
     }
     protected void btnPvCArmor_Click(object sender, EventArgs e)
     {
-
+        
     }
     protected void btnFG2H_Click(object sender, EventArgs e)
     {
-
+        
     }
     protected void btnPvCDag_Click(object sender, EventArgs e)
     {
-
+        
     }
     protected void btnPvC1H_Click(object sender, EventArgs e)
     {
-
+        
     }
     protected void btnBack_Click(object sender, EventArgs e)
     {
@@ -128,7 +128,7 @@ public partial class Products : System.Web.UI.Page
             trWMatSelection.Visible = false;
             tblEQSelection.Visible = true;
             btnBack.Visible = false;
-            lblType.InnerText = "";   
+            lblType.InnerText = "";
         }
     }
 }

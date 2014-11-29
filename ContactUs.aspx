@@ -18,7 +18,7 @@
     <img src="Images/PHONE.jpg" /><br />
     <p>If you need to get in immediate contact we will answer calls Monday through Friday 12 pm to 7 pm.<br /><br /><font color="Blue">Phone: (816)500-5555</font></p>
     <br />
-    <img src="Images/SHIPPING%20ADDRESS.jpg" /><br />
+    <img src="Images/SHIPPING%20ADDRESS.png" /><br />
     <p>If for some reason you need to send to Flagstaff Armory, our workshop is located at:</p>
     <p><font color="Blue">Flagstaff Armory <br /> 925 S Knoles Dr <br /> Flagstaff, AZ 86001</font></p>
     <p>To return an item please contact us first to receive a shipping label and to work out the details of the return, otherwise you may never receive a return product or refund.</p>
