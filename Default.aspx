@@ -74,19 +74,19 @@
         <div class="">
             <div class="col-xs-3">
                 <img class="auto-style1 text-center img-rounded img-responsive" src="Images/1Hand.jpg" /><br />
-                <asp:HyperLink CssClass="text-center col-xs-12" ID="HyperLink3" runat="server">Add to cart</asp:HyperLink>
+                <asp:HyperLink CssClass="text-center col-xs-12" ID="HyperLink3" runat="server" NavigateUrl="~/ProductList.aspx">View Details</asp:HyperLink>
             </div>
             <div class="col-xs-3">
                 <img class="auto-style1 img-rounded img-responsive" src="Images/FoamArmor.jpg" /><br />
-                <asp:HyperLink CssClass="text-center col-xs-12" ID="HyperLink4" runat="server">Add to cart</asp:HyperLink>
+                <asp:HyperLink CssClass="text-center col-xs-12" ID="HyperLink4" runat="server" NavigateUrl="~/ProductList.aspx">View Details</asp:HyperLink>
             </div>
             <div class="col-xs-3">
                 <img class="auto-style1 img-rounded img-responsive" src="Images/FoamShield.jpg" /><br />
-                <asp:HyperLink CssClass="text-center col-xs-12" ID="HyperLink6" runat="server">Add to cart</asp:HyperLink>
+                <asp:HyperLink CssClass="text-center col-xs-12" ID="HyperLink6" runat="server" NavigateUrl="~/ProductList.aspx">View Details</asp:HyperLink>
             </div>
             <div class="col-xs-3">
                 <img class="auto-style1 img-rounded img-responsive" src="Images/PvCArmor.jpg" /><br />
-                <asp:HyperLink CssClass="text-center col-xs-12" ID="HyperLink5" runat="server">Add to cart</asp:HyperLink>
+                <asp:HyperLink CssClass="text-center col-xs-12" ID="HyperLink5" runat="server" NavigateUrl="~/ProductList.aspx">View Details</asp:HyperLink>
             </div>
          </div>
 
