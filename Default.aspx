@@ -36,19 +36,19 @@
     <div class="item active">
       <img class="img-responsive img-rounded size" src="Images/PvCArmor.jpg" alt="...">
       <div class="carousel-caption">
-      
+        <h5>Live action role-playing gear</h5>
       </div>
     </div>
     <div class="item">
       <img class="img-responsive img-rounded size" src="Images/FoamArmor.jpg" alt="...">
       <div class="carousel-caption">
-        
+       <h5>Armor</h5>
       </div>
     </div>
       <div class="item">
-      <img class="img-responsive img-rounded size" src="Images/FoamShield.jpg" alt="...">
+      <img class="img-responsive img-rounded size" src="Images/Weapons.jpg" alt="...">
       <div class="carousel-caption">
-        
+        <h5>Weapons</h5>
       </div>
     </div>
     
