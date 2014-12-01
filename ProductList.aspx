@@ -20,7 +20,7 @@
                 
             </div>
     
-    <asp:GridView ID="GridView1" runat="server" CssClass="table table-condensed" AutoGenerateColumns="False" DataSourceID="AccessDataSource1">
+    <asp:GridView ID="GridView1" runat="server" CssClass="table table-condensed" AutoGenerateColumns="False" DataSourceID="AccessDataSource1" AllowSorting="True">
                     <Columns>
                         <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" />
                         <asp:BoundField DataField="Material" HeaderText="Material" SortExpression="Material" />
