@@ -41,6 +41,8 @@
                     <li class=""><a href="Default.aspx" target="">Home</a></li>
                     <li><a href="Products.aspx" target="">Products</a></li>
                     <li><a href="ContactUs.aspx" target="">Contact Us</a></li>
+                     <li><a href="ProductList.aspx" target="">Product List</a></li>
+                    
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="ShoppingCart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
